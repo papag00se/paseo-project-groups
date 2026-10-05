@@ -200,7 +200,7 @@ export function MainSurface({ theme, host, layout, navigation }: PluginSurfacePr
   });
 
   useEffect(() => {
-    return paseo.workspaces.subscribe((update) => {
+    return paseo.workspaces.subscribe((update: { kind: "upsert"; workspace: Workspace } | { kind: "remove"; id: string }) => {
       queryClient.setQueryData<Workspace[]>(workspacesKey, (current = []) => {
         if (update.kind === "upsert") {
           const workspace = update.workspace as Workspace;
