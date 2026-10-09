@@ -12,6 +12,8 @@
 
 </div>
 
+> **Retired.** Project groups are built into [papag00se/paseo](https://github.com/papag00se/paseo) (see `docs/fork/README.md`). This plugin targets Paseo 0.7.x and is no longer installed.
+
 Organize Paseo projects into named groups and see their live agent status at a glance. Groups are metadata: project directories stay exactly where they are.
 
 ## Features
